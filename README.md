@@ -27,6 +27,34 @@ Install [Anaconda](https://www.anaconda.com/products/individual) or [Miniconda](
 Then:
 
     conda env create -f environment.yml
-    conda activate sparse_edit
+    conda activate locopalettes
 
 To update an already created environment if the `environment.yml` file changes, first activate and then run `conda env update --file environment.yml --prune`.
+
+### Usage
+
+First, we need to have features (.mat) files. To extract per-pixel features, please refer to Aksoy's code and run
+
+    sh run_extract_feat.sh
+
+Then, we need to extract panoptic segments (followed by guided filtering), run
+
+    python panoptic.py <your_image>
+
+This would create a folder named `<sss_your_image>` that contains segments under root -> classes -> instances hierarchy.
+
+Then, run the below to extract all informations (i.e. palettes, weights, masks, activations, trees):
+
+    python func/seg.py <your_image> <your_feature> <sss_your_image> --o s --m fea
+
+The above code generates all informations needed alongside `GUI.py`,
+
+Finally, run
+
+    python GUI.py
+
+After the GUI is loaded, follow the below order clicking:
+
+(1) Load image
+(2) Load features
+(3) Load tree (choose arbitrary image from your <sss_your_image> folder)
