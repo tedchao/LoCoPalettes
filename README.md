@@ -33,7 +33,7 @@ To update an already created environment if the `environment.yml` file changes, 
 
 ### Usage
 
-First, we need to have features (.mat) files. To extract per-pixel features, please refer to Aksoy's code and run
+First, we need to have features (.mat) files. To extract per-pixel features, please refer to [Aksoy's code](https://github.com/tedchao/SIGGRAPH18SSS) and run
 
     sh run_extract_feat.sh
 
