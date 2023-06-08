@@ -18,7 +18,7 @@ The contribution of this work:
 
 ## Installation
 
-You can install dependencies using either `conda` or `pip`.
+You can install dependencies using `conda`.
 
 ### Conda
 
