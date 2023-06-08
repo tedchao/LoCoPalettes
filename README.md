@@ -13,8 +13,8 @@ See [demo video](https://cragl.cs.gmu.edu/locopalettes/) for our editing framewo
 This repo is official code release for *LoCoPalettes*. 
 
 The contribution of this work:
-1. An approach to compute sparser weights, comprimising spatial coherence and sparsity, for color editing without much color leakage compared to state-of-the-art.
-2. An optimization framework that operates on our proposed palette hierarchy, enabling semantic color editing.
+1. An approach to compute sparser weights, comprimising spatial coherence with sparsity, to achieve sparse color edits without much color leakage compared to state-of-the-art.
+2. An optimization framework that operates on our proposed palette hierarchy, enabling semantic color editing via placing color constraints.
 
 ## Installation
 
