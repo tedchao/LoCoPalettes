@@ -57,4 +57,4 @@ After the GUI is loaded, follow the below order clicking:
 
 (1) Load image
 (2) Load features
-(3) Load tree (choose arbitrary image from your <sss_your_image> folder)
+(3) Load tree (choose arbitrary image from your `<sss_your_image>` folder)
