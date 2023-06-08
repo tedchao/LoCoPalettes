@@ -342,7 +342,7 @@ class MainWindow( QWidget ):
             print( "Loading features..." )
             
             # load features with numpy array
-            self.EDIT.features = sio.loadmat( path )['features']
+            self.EDIT.features = sio.loadmat( path )['embedmap']
             print( "Features loaded." )
             
             # use features to compute our new weight scheme
