@@ -100,6 +100,8 @@ class Edits():
                 ### Solve Eq. 1
                 wrong_node = optimize_hierarchy( cptree, self.pixel_constraints, self.palette_constraints )
                 if wrong_node == -1:   # if hierarchy is optimized with no errors (indicator: node as -1), then break
+                    # Note that palette propagation can be implemented inside `optimize_hierarchy` to better benchmarking the local palettes
+                    # (if further constraints are added)
                     break
                 else:   # otherwise, start finding new node for this constraint until it finds new location that makes hierarchy error-free
                     split_indicator = True
