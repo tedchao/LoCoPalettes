@@ -380,7 +380,7 @@ def main():
     image = cv2.cvtColor( cv2.imread(args.input), cv2.COLOR_BGR2RGB ) / 255.
     print( 'image size:', image.shape )
     
-    features = sio.loadmat(args.features)['features']
+    features = sio.loadmat(args.features)['embedmap']
     print( 'feature size:', features.shape )
     
     

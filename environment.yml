@@ -15,9 +15,13 @@ dependencies:
   - git
   - cython
   - cvxpy
+  - pytorch
+  - torchvision
   - pip:
      - qtwidgets
      - git+https://github.com/yig/python-qtwidgets#egg=qtwidgets
      - qtpy
      - matplotlib
+     - seaborn
      - pyside6
+     - git+https://github.com/cocodataset/panopticapi.git
